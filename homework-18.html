@@ -1,0 +1,274 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/styles/style.css" />
+        <link rel="stylesheet" href="assets/styles/fontawesome/fontawesome.css" />
+        <link rel="stylesheet" href="assets/styles/fontawesome/brands.css" />
+        <link rel="stylesheet" href="assets/styles/fontawesome/solid.css" />
+        <link rel="stylesheet" href="assets/styles/fontawesome/regular.css" />
+    </head>
+    <body>
+        <div id="root"></div>
+        <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+        <script type="text/babel">
+            var rootElement = document.getElementById("root")
+            var popular1 = [
+                {
+                    image: "assets/images/mov_134077_56979.jpg",
+                    link: "https://www.filimo.com/m/132691",
+                    isExclusive: false,
+                },
+                {
+                    image: "assets/images/mov_133828_56868.jpg",
+                    link: "https://www.filimo.com/m/133827",
+                    isExclusive: true,
+                },
+                {
+                    image: "assets/images/mov_134076_56936.jpg",
+                    link: "https://www.filimo.com/m/131941",
+                    isExclusive: false,
+                },
+                {
+                    image: "assets/images/mov_134075_56938.jpg",
+                    link: "https://www.filimo.com/m/132689",
+                    isExclusive: true,
+                },
+                {
+                    image: "assets/images/mov_133845_56819.jpg",
+                    link: "https://www.filimo.com/m/131383",
+                    isExclusive: true,
+                },
+                {
+                    image: "assets/images/mov_133843_56806.jpg",
+                    link: "https://www.filimo.com/m/130789",
+                    isExclusive: false,
+                },
+            ]
+            var popular2 = [
+                {
+                    image: "assets/images/mov_132148_54299-s.webp",
+                    link: "https://www.filimo.com/m/132691",
+                    isExclusive: true,
+                },
+                {
+                    image: "assets/images/mov_131147_53880-s.webp",
+                    link: "https://www.filimo.com/m/133827",
+                    isExclusive: true,
+                },
+                {
+                    image: "assets/images/mov_131938_54213-s.webp",
+                    link: "https://www.filimo.com/m/131941",
+                    isExclusive: false,
+                },
+                {
+                    image: "assets/images/mov_125076_56170-s.webp",
+                    link: "https://www.filimo.com/m/132689",
+                    isExclusive: true,
+                },
+                {
+                    image: "assets/images/mov_132897_55350-s.webp",
+                    link: "https://www.filimo.com/m/131383",
+                    isExclusive: false,
+                },
+                {
+                    image: "assets/images/mov_130962_52696-s.webp",
+                    link: "https://www.filimo.com/m/130789",
+                    isExclusive: true,
+                },
+            ]
+            var popular3 = [
+                {
+                    image: "assets/images/mov_639_995-s.webp",
+                    link: "https://www.filimo.com/m/132691",
+                    isExclusive: true,
+                },
+                {
+                    image: "assets/images/mov_9258_27939-s.webp",
+                    link: "https://www.filimo.com/m/133827",
+                    isExclusive: false,
+                },
+                {
+                    image: "assets/images/mov_11381_315-s.webp",
+                    link: "https://www.filimo.com/m/131941",
+                    isExclusive: true,
+                },
+                {
+                    image: "assets/images/mov_15804_16979-s.webp",
+                    link: "https://www.filimo.com/m/132689",
+                    isExclusive: false,
+                },
+                {
+                    image: "assets/images/mov_24190_1-s.webp",
+                    link: "https://www.filimo.com/m/131383",
+                    isExclusive: false,
+                },
+                {
+                    image: "assets/images/mov_30040_808-s.webp",
+                    link: "https://www.filimo.com/m/130789",
+                    isExclusive: false,
+                },
+            ]
+            var filimoBox1 = [
+                {
+                    image: "assets/images/what_box.png",
+                    link: "https://www.aparat.com/video/video/embed/videohash/7uROr/vt/frame?t=0",
+                    text: "فیلیموباکس چیست و چه امکاناتی دارد؟",
+                },
+                {
+                    image: "assets/images/how_see.png",
+                    link: "www.aparat.com/video/video/embed/videohash/KEW8c/vt/frame?t=0",
+                    text: "چطور با فیلیموباکس فیلم تماشا کنیم؟",
+                },
+                {
+                    image: "assets/images/how_set.png",
+                    link: "www.aparat.com/video/video/embed/videohash/5du7V/vt/frame?t=1",
+                    text: "چطور با کنترل فیلیموباکس کار کنیم؟",
+                },
+            ]
+            var filimoBox2 = [
+                {
+                    image: "assets/images/androidtv-bg.png",
+                    link: "www.aparat.com/video/video/embed/videohash/NLHWY/vt/frame?t=0",
+                    text: "چطور برنامه فیلیمو را روی تلویزیون خود نصب کنیم؟"
+                },
+                {
+                    image: "assets/images/LG-tv.png",
+                    link: "www.aparat.com/video/video/embed/videohash/hg1TZ/vt/frame?t=0",
+                    text: "برای تماشا روی تلویزیون های LG چه کار کنیم؟",
+                },
+                {
+                    image: "assets/images/cable-bg.png",
+                    link: "www.aparat.com/video/video/embed/videohash/l78K9/vt/frame?t=0",
+                    text: "چطور با اتصال کابل به تلویزیون قدیمی، فیلیو تماشا کنیم؟",
+                },
+            ]
+            var filimoBox3 = [
+                {
+                    image: "assets/images/miro-bg.png",
+                    link: "www.aparat.com/video/video/embed/videohash/UhCDR/vt/frame?t=0",
+                    text: "روش آیینه کردن (اسکرین میرور) یعنی چی و چطور انجامش بدهیم؟"
+                },
+                {
+                    image: "assets/images/cast-bg.png",
+                    link: "www.aparat.com/video/video/embed/videohash/DCeB1/vt/frame?t=0",
+                    text: "روش کست کردن یعنی چی و چطور انجامش بدیم؟",
+                },
+                {
+                    image: "assets/images/smart-bg.png",
+                    link: "www.aparat.com/video/video/embed/videohash/4Cold/vt/frame?t=0",
+                    text: "چطوری با جستجو در مرورگر تلویزیون، فیلیمو تماشا کنیم؟",
+                },
+            ]
+            function PopularMovies(props) {
+                return props.data.map(function(m) {
+                    return(
+                        <li className="movie">
+                            <a href={m.link} target="_blank">
+                                {m.isExclusive === true ? <img className="main-darker" src={m.image} /> : <img className="main" src={m.image} />}
+                                {m.isExclusive === true ? <img className="exclusive" src="assets/images/exclusive-fa.svg" /> : ""}
+                            </a>
+                        </li>
+                    )
+                })
+            }
+            function FilimoBox(props) {
+                return props.data.map(function(n) {
+                    return(
+                        <li>
+                            <a href={n.link}>
+                                <img src={n.image} />
+                                <div className="play-button">
+                                    <div className="circle"></div>
+                                    <div className="triangle"></div>
+                                </div>
+                                <h3>{n.text}</h3>
+                            </a>
+                        </li>
+                    )
+                })
+            }
+            var element = (
+                <div>
+                    <div className="popular">
+                        <div className="container">
+                            <h2 className="title">محبوب‌ترین‌های فیلیمو .یک</h2>
+                            <ul className="popular-list">
+                                <PopularMovies data={popular1}></PopularMovies>
+                            </ul>
+                            <h2 className="title">محبوب‌ترین‌های فیلیمو .دو</h2>
+                            <ul className="popular-list">
+                                <PopularMovies data={popular2}></PopularMovies>
+                            </ul>
+                            <h2 className="title">محبوب‌ترین‌های فیلیمو .سه</h2>
+                            <ul className="popular-list">
+                                <PopularMovies data={popular3}></PopularMovies>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="filimo-box vertical-padding">
+                        <div className="container">
+                            <div className="title-wrapper">
+                                <img className="logo" src="assets/images/filimobox_colored.png" />
+                                <h2>فیلیموباکس چیست؟</h2>
+                            </div>
+                            <p>برای تماشای فیلیمو، تلویزیون شما باید هوشمند باشد، اگر نیست، با تهیه یک اندروید باکس، تلویزیون خود را هوشمند کنید، ما به شما فیلیمو باکس را پیشنهاد می‌کنیم که به تلویزیون وصل می‌شود و آن را هوشمند می‌کند. چطوری؟ کافیست ویدیو‌های زیر را تماشا‌کنید.</p>
+                            <a className="button more-info" href="#">
+                                <p>اطلاعات بیشتر</p>
+                                <i className="fa-solid fa-arrow-left"></i>
+                            </a>
+                            <ul className="video-list">
+                                <FilimoBox data={filimoBox1}></FilimoBox>
+                            </ul>
+                            <div className="arrows">
+                                <i className="fa-solid fa-angle-right"></i>
+                                <i className="fa-solid fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="filimo-box vertical-padding">
+                        <div className="container">
+                            <div className="title-wrapper">
+                                <img className="logo" src="assets/images/filimobox_colored.png" />
+                                <h2>فیلیموباکس چیست؟</h2>
+                            </div>
+                            <p>برای تماشای فیلیمو، تلویزیون شما باید هوشمند باشد، اگر نیست، با تهیه یک اندروید باکس، تلویزیون خود را هوشمند کنید، ما به شما فیلیمو باکس را پیشنهاد می‌کنیم که به تلویزیون وصل می‌شود و آن را هوشمند می‌کند. چطوری؟ کافیست ویدیو‌های زیر را تماشا‌کنید.</p>
+                            <a className="button more-info" href="#">
+                                <p>اطلاعات بیشتر</p>
+                                <i className="fa-solid fa-arrow-left"></i>
+                            </a>
+                            <ul className="video-list">
+                                <FilimoBox data={filimoBox2}></FilimoBox>
+                            </ul>
+                            <div className="arrows">
+                                <i className="fa-solid fa-angle-right"></i>
+                                <i className="fa-solid fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="filimo-box vertical-padding">
+                        <div className="container">
+                            <div className="title-wrapper">
+                                <img className="logo" src="assets/images/filimobox_colored.png" />
+                                <h2>فیلیموباکس چیست؟</h2>
+                            </div>
+                            <p>برای تماشای فیلیمو، تلویزیون شما باید هوشمند باشد، اگر نیست، با تهیه یک اندروید باکس، تلویزیون خود را هوشمند کنید، ما به شما فیلیمو باکس را پیشنهاد می‌کنیم که به تلویزیون وصل می‌شود و آن را هوشمند می‌کند. چطوری؟ کافیست ویدیو‌های زیر را تماشا‌کنید.</p>
+                            <a className="button more-info" href="#">
+                                <p>اطلاعات بیشتر</p>
+                                <i className="fa-solid fa-arrow-left"></i>
+                            </a>
+                            <ul className="video-list">
+                                <FilimoBox data={filimoBox3}></FilimoBox>
+                            </ul>
+                            <div className="arrows">
+                                <i className="fa-solid fa-angle-right"></i>
+                                <i className="fa-solid fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+            ReactDOM.render(element, rootElement)
+        </script>
+    </body>
+</html>
